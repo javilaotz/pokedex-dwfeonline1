@@ -1,0 +1,102 @@
+$fontColor:  #5e5e5efe;
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .brand{
+        font-weight: 600;
+        font-size: 26px;
+    }
+
+    div{
+        width: 100%;
+        ul{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 8px;
+
+            li{ 
+                flex: auto;
+
+                a {
+                    text-decoration: none;
+                    color:$fontColor;
+                    text-transform: capitalize;
+                    padding: 5px;
+                    border-radius: 5px;
+
+                    &:hover {
+                        font-weight: 600;
+                        background-color: #5e5e5efe;
+                        color: #fff;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.listContainer{
+    display: flex;
+    flex-wrap: wrap;
+
+    .contenedorTarjeta{
+        margin: 20px;
+        transform: scale(1);
+        transition-duration: 1s;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.05);
+            transition-duration: 1s;
+        }
+
+        .foto{
+            padding: 10px;
+            background-color: #F2F2F2;
+    
+            img{
+                width: 180px;
+            }
+        }
+
+        .info{
+            .number{
+                color: $fontColor;
+                font-weight: bold;
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+            .name{
+                text-transform: capitalize;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .tipos{
+                display: flex;
+
+                div{
+                    padding: 3px;
+                    font-size: 12px;
+                    width: 48px;
+                    margin: 10px;
+                    text-transform: capitalize;
+                    border-radius: 5px;
+                    text-align: center;
+                }
+                .grass{
+                    background-color: #9BCC50;
+                }
+                .poison{
+                    background-color: #B97FC9;
+                }
+            }
+        }
+    }
+
+}
