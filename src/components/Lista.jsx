@@ -10,10 +10,14 @@ export default function Lista() {
     <Tarjeta pokemon={pokemon_data} />
   ))
 
+  const cargando = (
+    <div className="loading">Cargando</div>
+  )
+
   return (
     <div className="listContainer">
       {
-        fetched ? lista : 'Cargando...'
+        fetched ? lista : cargando
       }
     </div>
   )
